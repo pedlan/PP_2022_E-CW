@@ -1,0 +1,3 @@
+Data: 17/12/2021 08:33:08 
+	 Arquivo: C:\xampp\htdocs\ATIVIDADE 06\usuarioCRUD.php - Linha: 107 
+	 Erro: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bd_alma.usuario' doesn't exist 

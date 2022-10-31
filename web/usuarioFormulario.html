@@ -1,0 +1,86 @@
+<!-- <?php	
+		session_start();
+
+		include_once "usuarioCRUD.php";
+
+		$id = 0;
+		$nomeUsuario = "";
+		$login = "";
+		$senha = "";
+
+		if(isset($_GET['id'])){
+			$id = $_GET['id'];
+
+			$registro = recuperarUsuarioPorId($id);
+			$login = $registro['login'];
+			$senha = $registro['senha'];
+			$nomeUsuario = $registro['nomeUsuario'];
+		}
+	?> 
+
+input value="<?php echo $nomeUsuario; ?>"
+input value="<?php echo $login; ?>"
+input value="<?php echo $senha; ?>"
+input form value="<?php echo $id; ?>"
+-->
+
+	<html>
+
+		<header>
+			<meta charset="utf-8"/>
+			<title> Cadastro </title>
+			<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+			<link type="text/css" rel="stylesheet" href="css/estilos.css"/>	
+
+			<center>
+			<img src="logo.png">	
+			</center>
+
+		</header>
+		<body>
+			<div class="container">
+				<h1>Cadastro de Usuário</h1>
+				<hr/>				
+				<form id="formulario" action="usuarioSalvar.php" method="post">
+					<div class="row form-group">
+						<input type="hidden" id="id" name="id"  >
+
+						<!-- <div class="col-md-12">
+                            <label>Nome</label>
+						    <input class="form-control" id="nomeUsuario" name="nomeUsuario"   type="text" placeholder="Informe o nome">
+                        </div> -->
+                    </div>
+					    <div class="row form-group">
+						    <div class="col-md-6">
+							    <label for="login">E-mail</label>  
+							    <input class="form-control" id="login" name="login"   type="text" placeholder="Informe o E-mail">
+							</div>	
+						</div>
+						
+						<div class="row form-group">
+						    <div class="col-md-6">
+							    <label for="senha">Senha</label>  
+							    <input class="form-control" id="senha" name="senha"  type="password" placeholder="Informe a senha">
+                            </div>
+						
+						    <div class="col-md-6">
+							    <label for="senha">Confirmar a senha</label>  
+							    <input class="form-control" id="senha" name="senha"  type="password" placeholder="Confirme sua senha">
+                            </div>
+						</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<a href="login.html" class="btn btn-primary float-left">Voltar</a>
+							<button type="submit" class="btn btn-success float-right">Salvar</button>											
+						</div>											
+					</div>					
+				</form>			
+			</div> 	
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/bootstrap.js"></script>
+			<script type="text/javascript" src="js/jquery.validate.js"></script>		
+			<script type="text/javascript" src="js/jquery.mask.js"></script>			
+			<script type="text/javascript" src="js/usuarioFormulario.js"></script>				
+		</body>
+	</html>

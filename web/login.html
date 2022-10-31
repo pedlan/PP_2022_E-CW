@@ -1,0 +1,55 @@
+<html>
+		<header>
+			<meta charset="utf-8"/>
+			<title> Login </title>
+			<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+			<link type="text/css" rel="stylesheet" href="css/estilos.css"/>	
+
+			<center>
+			<img src="logo.png">
+			<h1>Login</h1>
+			</center>
+
+		</header>
+		<body>
+						
+			<div class="container">
+				
+				<form id="formulario" action="loginAutenticar.php" method="post" autocomplete="off">
+					<div class="row form-group">
+						<div class="col-md-12">
+							<label for="login">E-mail</label>  
+							<input class="form-control" name="email" id="email" type="text" placeholder="Digite seu email">
+						</div>			
+					</div>
+					<div class="row form-group">
+						<div class="col-md-12">
+							<label for="senha">Senha</label>
+							<input class="form-control" id="senha" name="senha" type="password" placeholder="Digite sua senha">
+						</div>			
+					</div>	
+					<div class="row form-group">		
+					    <div class="col-md-3"> 
+							<a href="loginEsqueceu.html" class="btn btn-primary float-left">Esqueci minha senha</a>	
+						</div>	
+                        <div class="col-md-3"> 
+							<a href="usuarioFormulario.html" class="btn btn-primary float-left">Cadastrar</a>	
+						</div>																						
+						<div class="col-md-3"> 
+							<button type="submit" class="btn btn-success float-right">Entrar</button>	
+						</div>											
+					</div>	
+
+				</form>			
+			</div> 	
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/bootstrap.js"></script>
+			<script type="text/javascript" src="js/jquery.validate.js"></script>		
+			<script type="text/javascript" src="js/jquery.mask.js"></script>			
+			<script type="text/javascript" src="js/login.js"></script>				
+		</body>
+	</html>
+
+	
+	
+	

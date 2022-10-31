@@ -1,0 +1,3 @@
+Data: 17/12/2021 09:55:22 
+	 Arquivo: C:\xampp\htdocs\ATIVIDADE 06\colmeiaCRUD.php - Linha: 28 
+	 Erro: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined 
